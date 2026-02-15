@@ -1,0 +1,33 @@
+# My Static Website Docker Image
+
+This is a simple static HTML website (from lab from the first semester) served using nginx.
+
+## Description
+
+The project contains a static website and a Dockerfile that builds
+an nginx-based container to serve the site.
+
+The image was created as part of the DevOps with Docker course.
+
+## How to build the image
+
+Clone the repository and run:
+
+docker build -t my-static-site .
+
+## How to run the container
+
+docker run -p 8080:80 my-static-site
+
+Then open your browser at:
+
+http://localhost:8080
+
+## Docker Hub
+
+docker pull yourdockerhubname/my-static-site
+docker run -p 8080:80 yourdockerhubname/my-static-site
+## Base Image
+
+nginx:alpine
+
