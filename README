@@ -13,11 +13,11 @@ The image was created as part of the DevOps with Docker course.
 
 Clone the repository and run:
 
-docker build -t my-static-site .
+docker build -t static-site .
 
 ## How to run the container
 
-docker run -p 8080:80 my-static-site
+docker run -p 8080:80 static-site
 
 Then open your browser at:
 
@@ -25,8 +25,8 @@ http://localhost:8080
 
 ## Docker Hub
 
-docker pull yourdockerhubname/my-static-site
-docker run -p 8080:80 yourdockerhubname/my-static-site
+docker pull saperspecnaz/static-site
+docker run -p 8080:80 saperspecnaz/static-site
 ## Base Image
 
 nginx:alpine
